@@ -21,16 +21,16 @@ That's why for part of my final project I decided to write my own ALPR solution.
 
 For license plates I used a portal that has Polish license plates - [tablica-rejestracyjna.pl](https://tablica-rejestracyjna.pl/). It contains a lot of images of cars (which contain license plates). I decided to use following images for development:
 
-- [image]("https://tablica-rejestracyjna.pl/images/photos/20241217184503.jpeg)
-- [image]('https://tablica-rejestracyjna.pl/images/photos/20241222194356.jpeg)
-- [image]("https://tablica-rejestracyjna.pl/images/photos/20241221145937.jpg")
-- [image]("https://tablica-rejestracyjna.pl/images/photos/20241220211840_1.jpg)
-- [image]("https://tablica-rejestracyjna.pl/images/photos/20241226000931.png)
-- [image]('https://tablica-rejestracyjna.pl/images/photos/20241222132622.jpg)
-- [image]('https://tablica-rejestracyjna.pl/images/photos/20241223133614.jpg)
-- [image]("https://tablica-rejestracyjna.pl/images/photos/20241231224738.jpe)
-- [image]("https://tablica-rejestracyjna.pl/images/photos/20250106155050.jpeg)
-- [image]("https://tablica-rejestracyjna.pl/images/photos/20250106153417.jpeg)
+- [image](https://tablica-rejestracyjna.pl/images/photos/20241217184503.jpeg)
+- [image](https://tablica-rejestracyjna.pl/images/photos/20241222194356.jpeg)
+- [image](https://tablica-rejestracyjna.pl/images/photos/20241221145937.jpg)
+- [image](https://tablica-rejestracyjna.pl/images/photos/20241220211840_1.jpg)
+- [image](https://tablica-rejestracyjna.pl/images/photos/20241226000931.png)
+- [image](https://tablica-rejestracyjna.pl/images/photos/20241222132622.jpg)
+- [image](https://tablica-rejestracyjna.pl/images/photos/20241223133614.jpg)
+- [image](https://tablica-rejestracyjna.pl/images/photos/20241231224738.jpe)
+- [image](https://tablica-rejestracyjna.pl/images/photos/20250106155050.jpeg)
+- [image](https://tablica-rejestracyjna.pl/images/photos/20250106153417.jpeg)
 
 
 ### License plate recognition 
