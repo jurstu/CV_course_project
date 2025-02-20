@@ -84,3 +84,7 @@ After testing both solutions (tesseract and openOCR) I settled on tesseract call
 ![alt text](image-4.png)
 
 In case of unreadable plates it was obvious the data wasn't correct, but in 11 cases of humanly-readable plates the chosen method achieved correct results in 9 cases yielding 81% accuracy. 
+
+
+
+## Car tracking
