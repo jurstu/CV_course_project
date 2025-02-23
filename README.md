@@ -37,7 +37,7 @@ For license plates I used a portal that has Polish license plates - [tablica-rej
 
 Using [Yolov5m pretrained to detect registration](https://huggingface.co/keremberke/yolov5m-license-plate) I detected the license plates:
 
-![alt text](image-2.png)
+![alt text](static/image-2.png)
 
 This step wasn't enough, since skewed images didn't get read properly by tesseract or openOCR, since bounding boxes didn't select license-plates-only, but rather license plates and additional parts due to being not straight. Shortly speaking, the images were poor quality, since they were skewed.
 
@@ -65,14 +65,15 @@ warp = cv2.warpPerspective(plate, M, (int(w*1.2), int(h*1.2)))
 ```
 
 This resulted in a deskewed images:
-![alt text](output2.png)
+
+![alt text](static/output2.png)
 
 
 ### Getting clean images of license plates
 
 After getting clean, straight images, it was only required to run Yolov5 detector for license plates once again. This resulted in clean images of license plates:
 
-![alt text](image-3.png)
+![alt text](static/image-3.png)
 
 
 This meant I was ready to read license plate symbols.
@@ -81,7 +82,7 @@ This meant I was ready to read license plate symbols.
 
 After testing both solutions (tesseract and openOCR) I settled on tesseract called with pytesseract package. This didn't always work perfectly but I was happy with the result:
 
-![alt text](image-4.png)
+![alt text](static/image-4.png)
 
 In case of unreadable plates it was obvious the data wasn't correct, but in 11 cases of humanly-readable plates the chosen method achieved correct results in 9 cases yielding 81% accuracy. 
 
@@ -226,7 +227,7 @@ track changing position of a specific car (based on its ID). This in turn helps 
 currently tracked ID, giving way to estimating speed of each car. Notice the fact, that color of the track and bounding box denotes
 currently estimated speed
 
-<img src="output.gif" width=720>
+<img src="static/output.gif" width=720>
 
 ### Getting those juicy graphs
 
@@ -248,12 +249,12 @@ I set up graphana dashboard so that main chart shows 2 plots:
 
 After a while I started seeing first results, but more importantly I could leave it for some time to gather more information for me to interpret.
 These are example charts showing amount of traffic over time:
-![alt text](image-5.png)
+![alt text](static/image-5.png)
 
 Yellow plot denotes data averaged over last 10 minute periods, blue markers indicate start and end of weekends
 
 Studying a single day (Monday) we can note some interesting observations:
-![alt text](image-6.png)
+![alt text](static/image-6.png)
 The blue lines denote 2 exact times:
 
 - 7:00
@@ -270,7 +271,7 @@ Observations:
 
 
 However studying plots from Wednesday we can see something quite different:
-![alt text](image-8.png)
+![alt text](static/image-8.png)
 The blue lines denote 4 exact times:
 
 - 7:00
