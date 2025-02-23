@@ -229,6 +229,33 @@ currently estimated speed
 
 <img src="static/output.gif" width=720>
 
+### Comfortable development
+
+In order to debug or view the current camera raw or processed image and code I needed a setup that would work on an embedded computer (because of CSI/MIPI interface).
+I could connect a HDMI/DP cable to a monitor and work on a desktop environment, but that's often not possible, or comfortable. Sometimes it happens that 
+using a desktop environment is just slow and laggy due to very constrained performance of the machine. This is why I worked using VS code with remote SSH. 
+It allowed me to have all comfort of using a modern IDE without the need for burdening Jetson with additional rendering tasks. 
+
+For viewing video I could have taken different routes:
+
+- passing X interface
+
+- using gstreamer to stream video to other IP
+
+- writing to a file, hosting a http server and mashing f5 until my keyboard failed
+
+- using a modern python page hosting suite to facilitate streaming a video
+
+Needles to say, I went with the last one. After careful consideration I landed on nicegui. There are many options out there, but nicegui is easy to integrate
+and had an exact [example](https://github.com/zauberzeug/nicegui/blob/main/examples/opencv_webcam/main.py) I was looking for. 
+
+I written up some simple convertions code and successfully added it to my project. I had my video stream available on IP of the computer at port 8080.
+This meant, that if I was only able to reach this http page, I was able to see the tracking video live. I installed Tailscale VPN on the machine, and never 
+looked back on the IPs, since Tailscale allows to easily address any machine in it's network using their magic DNS and a hostname. This meant I was able to 
+reach the webpage with url like: nvidia:8080. It felt like magic!
+
+
+
 ### Getting those juicy graphs
 
 In order to collect/store information about cars I needed a place to keep records of the fact that in a particular minute some amout of cars was tracked.
