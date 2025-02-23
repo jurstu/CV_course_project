@@ -24,11 +24,11 @@ For license plates I used a portal that has Polish license plates - [tablica-rej
 - [image](https://tablica-rejestracyjna.pl/images/photos/20241217184503.jpeg)
 - [image](https://tablica-rejestracyjna.pl/images/photos/20241222194356.jpeg)
 - [image](https://tablica-rejestracyjna.pl/images/photos/20241221145937.jpg)
-- [image](https://tablica-rejestracyjna.pl/images/photos/20241220211840_1.jpg)
+- [image](https://tablica-rejestracyjna.pl/images/photos/20241220211840_1.jpeg)
 - [image](https://tablica-rejestracyjna.pl/images/photos/20241226000931.png)
 - [image](https://tablica-rejestracyjna.pl/images/photos/20241222132622.jpg)
 - [image](https://tablica-rejestracyjna.pl/images/photos/20241223133614.jpg)
-- [image](https://tablica-rejestracyjna.pl/images/photos/20241231224738.jpe)
+- [image](https://tablica-rejestracyjna.pl/images/photos/20241231224738.jpeg)
 - [image](https://tablica-rejestracyjna.pl/images/photos/20250106155050.jpeg)
 - [image](https://tablica-rejestracyjna.pl/images/photos/20250106153417.jpeg)
 
